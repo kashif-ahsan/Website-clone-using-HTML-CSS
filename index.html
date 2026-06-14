@@ -10,7 +10,10 @@
 </head>
 
 <body>
-
+  <div class="splash">
+  <div class="splash-panel left"></div>
+  <div class="splash-panel right"></div>
+</div>
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="inner">
@@ -222,6 +225,13 @@
       <span>Designed by TemplateMo</span>
     </div>
   </footer>
+  <script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelector('.splash').classList.add('split');
+    }, 800);
+  });
+</script>
 
 </body>
 
